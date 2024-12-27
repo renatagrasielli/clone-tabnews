@@ -1,185 +1,187 @@
-# Clone TabNews
+# Clone TabNews  
+Implementação do **TabNews** para o **curso.dev**
 
-Implementação do tabnews para o curso.dev
+---
 
-# Comandos úteis
+## 📋 Índice
+
+1. [Comandos Úteis](#comandos-úteis)  
+2. [Rodando o Ambiente](#rodando-o-ambiente)  
+3. [Executando Testes](#executando-testes)  
+4. [📦 Docker](#-docker)  
+5. [📅 psql](#-psql)  
+
+---
+
+## Comandos Úteis
 
 <details>
-  <summary><b>Se não lembrar os comandos do Git, abra-me</b></summary>
-<br>
+  <summary><b>📂 Esqueceu comando de Git? Abra-me.</b></summary>
+
   <details>
-    <summary><b>1. Conferir Status</b></summary>
+   <summary><b>1. Conferir Status</b></summary>
     
-```bash
+  ```bash
     git status
-```
-    
+  ```
   </details>
 
   <details>
     <summary><b>2. Trazer itens para o "palco"</b></summary>
-<br>
-Para adicionar um arquivo específico ou todas as alterações ao **staging area**: 
     
- ```
-  git add [caminho ou arquivo]  
- ```
+  Adicione um arquivo específico ou todas as alterações ao **staging area**:
     
-Para incluir todas as alterações de uma única vez, use:
+  ```bash
+    git add [caminho ou arquivo]
+  ```
     
-```bash
-git add . -A
-```
-    
+  Para incluir todas as alterações de uma vez, use:  
+  ```bash
+    git add . -A
+  ```
   </details>
-   <details>
-     <summary><b>3. Commit</b></summary>
-<br>
-"Commitar" as alterações.
-     
-```bash
-git commit -m 'detalhes da alteração'
-```
-ou editar o ultimo commit
 
-```
-git commit --amend
-```  
- <details>  
-   <summary>Destacar</summary>
-<br>
-Usar "`" destaca os caracteres.
-   
-```bash
-git commit -m 'destaque os `detalhes da alteração`'
-```
-  </details>
-</details>
-<details>  
-   <summary><b>4. Push</b></summary>
-<br>
-Publicar as alterações no repo remoto.
-   
-```bash
-git push
-```
-  </details>
-  
-<details>  
-   <summary><b>5. Pull</b></summary>
-<br>
-"Puxa" as mudanças do repo remoto e incorpora no branch local.
-   
-```bash
-git pull
-```
-  </details>
-  
   <details>
-    <summary><b>6. Renomear (mv)</b></summary>
-    
-```bash
-    git commit -m 'move `.env` file to `.env.development`'
-```
-    
-  </details>
-</details>
+    <summary><b>3. Commit</b></summary>
 
+  "Commitar" as alterações:
+  ```bash
+    git commit -m 'detalhes da alteração'
+  ```
+
+  Editar o último commit:
+  ```bash
+    git commit --amend
+  ```
+
+  Destacar texto no commit:
+    
+  ```bash
+    git commit -m 'destaque os `detalhes da alteração`'
+  ```
+  </details>
+
+  <details>
+    <summary><b>4. Push</b></summary>
+
+  Publicar as alterações no repositório remoto:
+  ```bash
+    git push
+  ```
+  </details>
+
+  <details>
+    <summary><b>5. Pull</b></summary>
+
+  Incorporar mudanças do repositório remoto no branch local:
+  ```bash
+    git pull
+  ```
+  </details>
+
+  <details>
+    <summary><b>6. Renomear Arquivos (mv)</b></summary>
+    
+  ```bash
+    git mv [nome atual] [nome novo]
+  ```
+  </details>
+
+</details>
 
 ---
-🛞 rodar o ambiente
 
-```
+## 🛞 Rodando o Ambiente
+
+Execute o servidor de desenvolvimento:  
+```bash
 npm run dev
 ```
 ---
-👁️ "observador" de testes
 
-```
+## 👁️ Executando Testes
+
+Execute o "observador" de testes:  
+```bash
 npm run test:watch
 ```
----
-
-## 🐋 Docker
-
-aplicar serviços do `compose.yaml`
-
-```
-docker compose up
-```
-ou especificando o caminho do `compose.yaml`
-
-```
-docker compose -f infra/compose.yaml up -d
-```
----
-<br>
-Verificar status do Docker
-
-```
-docker ps
-```
-ou
-
-```
-docker ps -a
-```
----
-<br>
-Verificar logs do docker
-
-```
-docker logs [NAME]
-```
----
-<br>
-usar docker em detached (desanexado)
-
-```
-docker compose up --detach
-```
-ou
-```
-docker compose up -d
-```
----
-destruir container
-
-```
-docker compose down
-```
-
-ou 
-
-```
-docker compose up -d --force-recreate
-```
-
 
 ---
-<br>
-instalar client do postgres
 
-```
-sudo apt update
-```
-+
+## 📦 Docker
 
-```
-sudo apt install postgresql-client
-```
+### Subir os serviços
+
+1. Usando o arquivo padrão:
+    ```bash
+    docker compose up
+    ```
+2. Especificando o caminho do arquivo `compose.yaml`:
+    ```bash
+    docker compose -f infra/compose.yaml up -d
+    ```
+
+### Outros Comandos Úteis
+
+- **Verificar status do Docker:**  
+    ```bash
+    docker ps
+    ```  
+    Ou listar todos os containers:  
+    ```bash
+    docker ps -a
+    ```
+  
+- **Verificar logs do Docker:**  
+    ```bash
+    docker logs [NOME_DO_CONTAINER]
+    ```
+
+- **Subir container em modo "desanexado":**  
+    ```bash
+    docker compose up --detach
+    ```  
+    Ou  
+    ```bash
+    docker compose up -d
+    ```
+
+- **Destruir containers:**  
+    ```bash
+    docker compose down
+    ```  
+    Ou recriar containers:  
+    ```bash
+    docker compose up -d --force-recreate
+    ```
+
 ---
-## 📅psql
+
+## 📅 psql  
+
+- **Acessar o PostgreSQL:**  
+    ```bash
+    psql --host=localhost --username=postgres --port=5432
+    ```
+
+- **Sair do psql:**  
+    ```bash
+    \q
+    ```
 
 ---
-<br>
-Verificar logs do docker
 
-```
-psql --host=localhost --username=postgres --port=5432
-```
+## 🛠️ Instalação do Cliente PostgreSQL  
+
+1. Atualize o repositório:  
+    ```bash
+    sudo apt update
+    ```
+2. Instale o cliente:  
+    ```bash
+    sudo apt install postgresql-client
+    ```
+
 ---
-sair do psql
-```
-\q
-```
+
+**💡 Dica:** Para mais informações sobre o projeto, consulte a [documentação oficial do TabNews](https://tabnews.com.br).
