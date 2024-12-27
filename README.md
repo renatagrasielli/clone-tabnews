@@ -14,6 +14,24 @@ Implementação do **TabNews** para o **curso.dev**
 ---
 
 ## Comandos Úteis
+ligando o rolê
+- Docker
+ ```bash
+   docker compose -f infra/compose.yaml up -d
+ ```
+- psql
+```bash
+    psql --host=localhost --username=postgres --port=5432
+```
+- dev
+```bash
+    npm run dev
+```
+- test
+```bash
+    npm run test:watch
+```
+---
 
 <details>
   <summary><b>📂 Esqueceu comando de Git? Abra-me.</b></summary>
