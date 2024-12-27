@@ -75,6 +75,14 @@ git pull
 ```
   </details>
   
+  <details>
+    <summary><b>6. Renomear (mv)</b></summary>
+    
+```bash
+    git commit -m 'move `.env` file to `.env.development`'
+```
+    
+  </details>
 </details>
 
 
@@ -102,7 +110,7 @@ docker compose up
 ou especificando o caminho do `compose.yaml`
 
 ```
-docker compose -f infra/compose.yaml up
+docker compose -f infra/compose.yaml up -d
 ```
 ---
 <br>
