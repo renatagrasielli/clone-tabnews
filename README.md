@@ -1,4 +1,4 @@
-# clone-tabnews
+# Clone TabNews
 
 Implementação do tabnews para o curso.dev
 
@@ -85,6 +85,27 @@ npm run dev
 
 ```
 npm run test:watch
+```
+---
+
+## Docker
+
+🐋 aplicar serviços do `compose.yaml`
+
+```
+docker compose up
+```
+---
+<br>
+Verificar status do Docker
+
+```
+docker ps
+```
+ou
+
+```
+docker ps -a
 ```
 ---
 
