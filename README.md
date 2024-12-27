@@ -40,7 +40,11 @@ git add . -A
 ```bash
 git commit -m 'detalhes da alteração'
 ```
-     
+ou editar o ultimo commit
+
+```
+git commit --amend
+```  
  <details>  
    <summary>Destacar</summary>
 <br>
