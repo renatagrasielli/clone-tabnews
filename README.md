@@ -88,12 +88,17 @@ npm run test:watch
 ```
 ---
 
-## Docker
+## 🐋 Docker
 
-🐋 aplicar serviços do `compose.yaml`
+aplicar serviços do `compose.yaml`
 
 ```
 docker compose up
+```
+ou especificando o caminho do `compose.yaml`
+
+```
+docker compose -f infra/compose.yaml up
 ```
 ---
 <br>
@@ -108,5 +113,61 @@ ou
 docker ps -a
 ```
 ---
+<br>
+Verificar logs do docker
+
+```
+docker logs [NAME]
+```
+---
+<br>
+usar docker em detached (desanexado)
+
+```
+docker compose up --detach
+```
+ou
+```
+docker compose up -d
+```
+---
+destruir container
+
+```
+docker compose down
+```
+
+ou 
+
+```
+docker compose up -d --force-recreate
+```
 
 
+---
+<br>
+instalar client do postgres
+
+```
+sudo apt update
+```
++
+
+```
+sudo apt install postgresql-client
+```
+---
+## 📅psql
+
+---
+<br>
+Verificar logs do docker
+
+```
+psql --host=localhost --username=postgres --port=5432
+```
+---
+sair do psql
+```
+\q
+```
