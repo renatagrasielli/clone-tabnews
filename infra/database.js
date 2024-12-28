@@ -1,5 +1,4 @@
 import { Client } from "pg";
-
 async function query(queryObject) {
   const client = new Client({
     host: process.env.POSTGRES_HOST,
@@ -13,7 +12,6 @@ async function query(queryObject) {
   await client.end();
   return result;
 }
-
 export default {
   query: query,
 };
