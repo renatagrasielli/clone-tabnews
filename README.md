@@ -55,7 +55,11 @@ ligando o rolê
     
   Para incluir todas as alterações de uma vez, use:  
   ```bash
-    git add . -A
+    git add . 
+  ```
+Ou 
+```bash
+    git add -A
   ```
   </details>
 
