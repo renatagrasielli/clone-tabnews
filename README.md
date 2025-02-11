@@ -61,6 +61,7 @@ Ou
   ```bash
     git add -A
   ```
+_- Obrigada pela correção, arthurhonorio! :)_
   </details>
 
   <details>
@@ -183,9 +184,9 @@ npm run test:watch
 
 - **Acessar o PostgreSQL:**  
     ```bash
-    psql --host=localhost --username=postgres --port=5432
+    psql --host=localhost --username=local_user --port=5432 --dbname=local_db
     ```
-
+Obs.: _"psql não lê o arquivo `.env.development`. É preciso passar os valores diretamente via linha de comando. E quando não é passado o valor do `--dbname`, [ele usa o valor definido no `--username`](https://www.postgresql.org/docs/current/app-psql.html#:~:text=Once%20the%20database%20user%20name%20is%20determined%2C%20it%20is%20used%20as%20the%20default%20database%20name.)" - Obrigada, Andrei! :)_
 - **Sair do psql:**  
     ```bash
     \q
