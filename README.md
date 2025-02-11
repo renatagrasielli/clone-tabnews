@@ -58,7 +58,7 @@ ligando o rolê
     git add . 
   ```
 Ou 
-```bash
+  ```bash
     git add -A
   ```
   </details>
