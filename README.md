@@ -4,15 +4,38 @@ Implementação do **TabNews** para o **curso.dev**
 ---
 
 ## 📋 Índice
-
-1. [Comandos Úteis](#comandos-úteis)  
-2. [Rodando o Ambiente](#rodando-o-ambiente)  
-3. [Executando Testes](#executando-testes)  
-4. [📦 Docker](#-docker)  
-5. [📅 psql](#-psql)  
+1. [Glossário](#glossário)
+2. [Comandos Úteis](#comandos-úteis)  
+3. [Rodando o Ambiente](#rodando-o-ambiente)  
+4. [Executando Testes](#executando-testes)  
+5. [📦 Docker](#-docker)  
+6. [📅 psql](#-psql)  
 
 ---
+## Glossário
+Alguns termos utilizados durante o curso.dev. <br>
+Se esqueceu alguns termos ou siglas? essa parte aqui vai te ajudar 🤭
+<details>
+  <summary><b>📝 Abra-me.</b></summary>
+  <details><summary><b>TDD</b></summary>
+    Test-Driven Development (Desenvolvimento Orientado a Testes)
+  </details>
+  <details><summary><b>Endpoint</b></summary>
+    "Ponto Final" 
+    - Imagine uma estação de metro(chaves), e você precisa se direcionar a um terminal X (informação antes das chaves, por exemplo "version:" ), para chegar a determinado local (informação disposta).<br>
+    
+  ```json
+         estação:{
+          terminal-001:{
+            metrô-x: "cheguei no meu Endpoint." 
+                  }
+                }
+          }
+  ```
+  </details>
+</details>
 
+---
 ## Comandos Úteis
 ligando o rolê
 - Docker
