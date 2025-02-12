@@ -4,7 +4,7 @@ Implementação do **TabNews** para o **curso.dev**
 ---
 
 ## 📋 Índice
-1. [Glossário](#glossário)
+1. [Glossário e Documentações](#glossário-e-documentações)
 2. [Comandos Úteis](#comandos-úteis)  
 3. [Rodando o Ambiente](#rodando-o-ambiente)  
 4. [Executando Testes](#executando-testes)  
@@ -12,7 +12,8 @@ Implementação do **TabNews** para o **curso.dev**
 6. [📅 psql](#-psql)  
 
 ---
-## Glossário
+## Glossário e Documentações
+### Glossário
 Alguns termos utilizados durante o curso.dev. <br>
 Se esqueceu alguns termos ou siglas? essa parte aqui vai te ajudar 🤭
 <details>
@@ -35,6 +36,10 @@ Se esqueceu alguns termos ou siglas? essa parte aqui vai te ajudar 🤭
   </details>
 </details>
 
+### Documentações
+> [node-postgres](https://node-postgres.com/) <br>
+> [PostgreSQL](https://www.postgresql.org/docs/) <br>
+> [psql](https://www.postgresql.org/docs/current/app-psql)
 ---
 ## Comandos Úteis
 ligando o rolê
