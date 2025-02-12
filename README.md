@@ -49,7 +49,7 @@ ligando o rolê
  ```
 - psql
 ```bash
-    psql --host=localhost --username=postgres --port=5432
+    psql --host=localhost --username=local_user --port=5432 --dbname=local_db
 ```
 - dev
 ```bash
