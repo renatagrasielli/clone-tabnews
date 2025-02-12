@@ -62,7 +62,7 @@ ligando o rolê
 ---
 
 <details>
-  <summary><b>📂 Esqueceu comando de Git? Abra-me.</b></summary>
+  <summary><b>📂 Esqueceu comando do Git? Abra-me.</b></summary>
 
   <details>
    <summary><b>1. Conferir Status</b></summary>
