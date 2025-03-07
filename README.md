@@ -6,8 +6,8 @@ Implementação do **TabNews** para o **curso.dev**
 ## 📋 Índice
 
 1. [Comandos Úteis](#comandos-úteis)  
-2. [Rodando o Ambiente](#rodando-o-ambiente)  
-3. [Executando Testes](#executando-testes)  
+2. [Rodando o Ambiente](#-rodando-o-ambiente)  
+3. [Executando Testes](#%EF%B8%8F-executando-testes)  
 4. [📦 Docker](#-docker)  
 5. [📅 psql](#-psql)  
 
@@ -21,7 +21,7 @@ ligando o rolê
  ```
 - psql
 ```bash
-    psql --host=localhost --username=postgres --port=5432
+    psql --host=localhost --username=local_user --port=5432 --dbname=local_db
 ```
 - dev
 ```bash
@@ -55,8 +55,13 @@ ligando o rolê
     
   Para incluir todas as alterações de uma vez, use:  
   ```bash
-    git add . -A
+    git add .
   ```
+  ou
+  ```bash
+    git add -A
+  ```   
+  _Obrigada pela correção, arthurhonorio! :)_
   </details>
 
   <details>
@@ -179,8 +184,10 @@ npm run test:watch
 
 - **Acessar o PostgreSQL:**  
     ```bash
-    psql --host=localhost --username=postgres --port=5432
+    psql --host=localhost --username=local_user --port=5432 --dbname=local_db
     ```
+_Obs: o psql não lê o arquivo .env.development. É preciso passar os valores diretamente via linha de comando. E [quando não é passado o valor do --dbname, ele usa o valor definido no --username](#https://www.postgresql.org/docs/current/app-psql.html#:~:text=Once%20the%20database%20user%20name%20is%20determined%2C%20it%20is%20used%20as%20the%20default%20database%20name.)._
+_Obrigada pela correção, Andrei! :)_
 
 - **Sair do psql:**  
     ```bash
